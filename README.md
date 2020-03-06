@@ -1,6 +1,6 @@
 # Project - UI
 Developing intuitive and user-friendly UIs.   
-Each UI project can be viewed by going to each branch.
+Each UI project can be viewed by going into each branch.
 
 ## List
 - ui-1: Animated hamburger menu
