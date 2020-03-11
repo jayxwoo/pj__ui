@@ -24,12 +24,11 @@ window.addEventListener('resize', function () {
 
 // switch menu icon & dropdown menu
 window.addEventListener('click', function (e) {
-    e.preventDefault;
     if (e.target === menuBtnOpen || e.target === menuBtnClose) {
         menuBtnOpen.classList.toggle('menu-btn--active');
         menuBtnClose.classList.toggle('menu-btn--active');
         headerNav.classList.toggle('header__nav--active');
-    } else if (e.target !== menuBtnClose) {
+    } else {
         if (menuBtnClose.classList.contains('menu-btn--active')) {
             menuBtnOpen.classList.toggle('menu-btn--active');
             menuBtnClose.classList.toggle('menu-btn--active');
