@@ -7,3 +7,9 @@
 - click outside to close menu
 - use font-awesome for chevron icon
 - rotate chevron icon on hover
+## Improvements
+- activate animation when navigated with tab key
+- accordion type submenu
+- fixed nav
+- box-shadow
+- searchbox
