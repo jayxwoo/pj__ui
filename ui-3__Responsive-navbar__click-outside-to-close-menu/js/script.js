@@ -4,25 +4,15 @@ const menuBtnOpen = document.querySelector('.menu-btn--open');
 const menuBtnClose = document.querySelector('.menu-btn--close');
 const headerNav = document.querySelector('.header__nav');
 
-// stop transition on screen resize
+// Stop transition and animation during screen resizing
 window.addEventListener('resize', function () {
-    let timer = null;
+    document.body.classList.add('resize-animation-stopper');
+    let timer = setTimeout(function () {
+    document.body.classList.remove('resize-animation-stopper');
+    }, 300);
+});
 
-    const removeTransition = function () {
-        headerNav.classList.remove('stop-transition');
-        timer = null;
-    }
-    
-    timer = setTimeout(removeTransition, 1000);
-
-    if (timer = null) {
-        clearTimeout(timer);
-    } else {
-        headerNav.classList.add('stop-transition');
-    }
-})
-
-// switch menu icon & dropdown menu
+// switch menu icon & activate dropdown menu
 window.addEventListener('click', function (e) {
     if (e.target === menuBtnOpen || e.target === menuBtnClose) {
         menuBtnOpen.classList.toggle('menu-btn--active');
