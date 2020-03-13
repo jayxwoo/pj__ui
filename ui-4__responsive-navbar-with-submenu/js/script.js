@@ -1,37 +1,17 @@
 // DOM Reference
 const headerNav = document.querySelector('.header__nav');
-const menuGroup = document.querySelector('.menu-group');
-const submenuGroup = document.querySelectorAll('.submenu-group');
 const menuBtn = document.querySelector('.menu-btn');
 const menuBtnOpen = document.querySelector('.menu-btn-open');
 const menuBtnClose = document.querySelector('.menu-btn-close');
 const faChev = document.querySelectorAll('.fa-chevron');
-const menuListAbout = document.querySelector('.menu-list-about');
-const menuListProject = document.querySelector('.menu-list-project');
 
 
-// Stop transition on screen resize for short time
+// Stop transition and animation during screen resizing
 window.addEventListener('resize', function () {
-    let timer = null;
-
-    const removeTransition = function () {
-        headerNav.classList.remove('stop-transition');
-        for (let i = 0; i < submenuGroup.length; i++) {
-            submenuGroup[i].classList.remove('stop-transition');
-        }
-        timer = null;
-    };
-
-    timer = setTimeout(removeTransition, 1000);
-
-    if (timer == null) {
-        clearTimeout(timer);
-    } else {
-        headerNav.classList.add('stop-transition');
-        for (let i = 0; i < submenuGroup.length; i++) {
-            submenuGroup[i].classList.add('stop-transition');
-        }
-    };
+    document.body.classList.add('resize-animation-stopper');
+    let timer = setTimeout(function () {
+    document.body.classList.remove('resize-animation-stopper');
+    }, 300);
 });
 
 // Main menu dropdown on click
@@ -68,28 +48,3 @@ const chevToLeft = function (mq) {
 const mq = window.matchMedia('(max-width: 799px)');
 chevToLeft(mq);
 mq.addListener(chevToLeft);
-
-// Rotate chevron icon on hover
-menuListAbout.addEventListener('mouseenter', function (e) {
-    const targetChev = e.target.querySelector('.fa-chevron');
-    targetChev.style.transform = 'rotate(180deg)';
-    targetChev.style.transition = 'transform 0.5s ease-in-out';
-})
-
-menuListAbout.addEventListener('mouseleave', function (e) {
-    const targetChev = e.target.querySelector('.fa-chevron');
-    targetChev.style.transform = 'rotate(0deg)';
-    targetChev.style.transition = 'transform 0.5s ease-in-out';
-})
-
-menuListProject.addEventListener('mouseenter', function (e) {
-    const targetChev = e.target.querySelector('.fa-chevron');
-    targetChev.style.transform = 'rotate(180deg)';
-    targetChev.style.transition = 'transform 0.5s ease-in-out';
-});
-
-menuListProject.addEventListener('mouseleave', function (e) {
-    const targetChev = e.target.querySelector('.fa-chevron');
-    targetChev.style.transform = 'rotate(0deg)';
-    targetChev.style.transition = 'transform 0.5s ease-in-out';
-});

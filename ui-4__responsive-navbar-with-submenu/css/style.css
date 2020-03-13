@@ -7,9 +7,10 @@
 /* ====================
 [MODULE]
 ======================= */
-/* STOP TRANSITION */
-.stop-transition {
+/* Transition and animation stopper */
+.resize-animation-stopper * {
     transition: none !important;
+    animation: none !important;
 }
 /* MENU BUTTON */
 .menu-btn {
@@ -32,11 +33,6 @@
 }
 .menu-btn--active {
     display: block;
-}
-
-/* CHEVRON ICON */
-.fa-chevron {
-    margin-left: 0.5em;
 }
 
 /* ====================
@@ -69,6 +65,14 @@ nav [class*="-link"] {
 }
 .menu-link {
     white-space: nowrap;
+}
+.fa-chevron {
+    margin-left: 0.5em;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-list:hover .fa-chevron,
+.menu-list:focus-within .fa-chevron {
+    transform: rotate(180deg);
 }
 .submenu-group {
     background: grey;
@@ -111,8 +115,7 @@ nav [class*="-link"] {
         background: rgba(80, 80, 80);
         border-radius: 10px;
     }
-    .menu-list-about,
-    .menu-list-project {
+    .menu-list {
         position: relative;
     }
     .submenu-group {
@@ -128,7 +131,6 @@ nav [class*="-link"] {
     .menu-list:focus-within .submenu-group {
         transform: scale(1, 1);
     }
-
     .submenu-link:hover {
         background: rgba(40, 40, 40);
     }
@@ -173,11 +175,9 @@ nav [class*="-link"] {
     }
     .submenu-group {
         top: 100%;
-    }
-    .submenu-group {
         transform: scale(1, 0);
         transform-origin: top;
-        transition: transform .5s ease-in-out .3s;
+        transition: transform .5s ease-in-out .2s;
     }
     .menu-list:hover .submenu-group,
     .menu-list:focus-within .submenu-group {
