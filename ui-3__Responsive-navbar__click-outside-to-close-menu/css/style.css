@@ -1,0 +1,114 @@
+/* ====================
+[css default]
+==================== */
+@import url("default/normalize.css");
+@import url("default/reset.css");
+
+/* ====================
+[module]
+==================== */
+.menu-btn {
+    border: none;
+    font-size: 2rem;
+    background: none;
+    color: white;
+} /* &times; <- 'x' entity for close button used in JS */
+
+/* ====================
+[typography]
+==================== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ====================
+[global]
+==================== */
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
+/* ====================
+--index page--
+[layout] header
+==================== */
+/* [layout] header - common */
+.header {
+    width: 100%;
+    height: 60px;
+    background: rgba(26, 26, 26);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+.nav__list-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* [layout] header - mobile */
+@media only screen and (max-width: 699px) {
+    .header {
+        position: relative;
+        justify-content: space-between;
+    }
+    .header__nav {
+        background: rgba(74, 74, 74);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: center;
+        border-radius: 10px;
+        transform: translateX(110%);
+        transition: transform 0.5s ease-in-out;
+    }
+    .header__nav--active {
+        transform: translateX(0);
+    }
+    .menu-btn--open, .menu-btn--close {
+        display: none;
+    }
+    .menu-btn--active {
+        display: block;
+    }
+    .nav__list-link {
+        display: block;
+        padding: 1em;
+        border-radius: 10px;
+    }
+    .nav__list-link:hover {
+        background: rgba(99, 99, 99);
+    }
+}
+
+/* [layout] header - desktop */
+@media only screen and (min-width: 700px) {
+    .menu-btn {
+        display: none;
+    }
+    .header__nav {
+        margin: 0 1.5em;
+    }
+    .nav__list {
+        display: flex;
+    }
+    .nav__list-item {
+        margin: 0 1.5em;
+    }
+    .nav__list-link {
+        display: block;
+        padding: 0.2em;
+    }
+    .nav__list-link:hover {
+        color: rgba(204, 204, 204);
+    }
+}
