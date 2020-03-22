@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="JM Woo">
+    <meta name="description" content="short description about this webpage">
+    <meta name="keywords" content="keywords, separated, with, comma">
+
+    <!-- FONT LINK -->
+    <!-- <link rel="stylesheet" href="fonts/fonts.css" media="none" onload="if(media!='all')media='all'"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS LINK -->
+    <script src="js/script.js" defer></script>
+
+    <!-- TITLE -->
+    <title></title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="search-bar">
+                <button class="search-btn fas fa-search" form="search-form" aria-haspopup="true" aria-label="search button"></button>
+                <form action="#" id="search-form" class="search-form">
+                    <input class="search-text" type="text" name="searchText" aria-label="search input"
+                        placeholder="enter your search">
+                </form>
+            </div>
+            <a class="logo-link" href="index.html"><img class="logo-img" src="img/mini-logo.png" alt="flooop logo"></a>
+            <button class="menu-btn fas fa-bars" aria-haspopup="true" aria-pressed="false"
+                aria-expanded="false"></button> <!-- "fas fa-times" for close icon -->
+            <nav class="nav">
+                <ul class="menu-container">
+                    <li class="menu-item"><a class="menu-link" href="#">HOME</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">NOTE</a>
+                        <ul class="submenu-container">
+                            <li class="submenu-item"><a class="submenu-link" href="#">HTML</a></li>
+                            <li class="submenu-item"><a class="submenu-link" href="#">CSS</a></li>
+                            <li class="submenu-item"><a class="submenu-link" href="#">JS</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="menu-link" href="#">PROJECTS</a>
+                        <ul class="submenu-container">
+                            <li class="submenu-item"><a class="submenu-link" href="#">UI Components</a></li>
+                            <li class="submenu-item"><a class="submenu-link" href="#">Design to code</a></li>
+                            <li class="submenu-item"><a class="submenu-link" href="#">Web Accessibility</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a class="menu-link" href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>
