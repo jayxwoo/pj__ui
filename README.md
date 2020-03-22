@@ -7,3 +7,4 @@ Each UI project can be viewed by going into each branch.
 - ui-2: Responsive navbar (restrict animation on screen resize)
 - ui-3: Responsive navbar (click ouside to close dropdown menu)
 - ui-4: Responsive navbar with submenu
+- ui-5: Responsive navbar with a search bar
