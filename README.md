@@ -1,10 +1,12 @@
-# Project - UI
-Developing intuitive and user-friendly UIs.   
-Each UI project can be viewed by going into each branch.
-
-## List
-- ui-1: Animated hamburger menu
-- ui-2: Responsive navbar (restrict animation on screen resize)
-- ui-3: Responsive navbar (click ouside to close dropdown menu)
-- ui-4: Responsive navbar with submenu
-- ui-5: Responsive navbar with a search bar
+# UI-5 Responsive navbar with a search bar
+## Features
+- [x]  responsive navbar
+- [x]  menu icon
+- [x]  dropdown main-menu
+- [x]  sliding out submenu
+- [x]  responsive searchbox
+- [x]  box shadow on navbar
+- [x]  improve accessibility
+    - [x]  search button
+    - [x]  menu button
+    - [x]  keyboard navigation
