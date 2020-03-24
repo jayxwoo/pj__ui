@@ -11,7 +11,7 @@ ul, ol { list-style: none; }
 [MODULE]
 ======================= */
 /* menu button */
-.menu-btn { border: none; background: none; font-size: 2rem; color: var(--black); padding: 0; }
+.menu-btn { border: none; background: none; font-size: 2rem; color: var(--black); padding: 0; cursor: pointer; }
 
 /* ====================
 [TYPOGRAPHY]
