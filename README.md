@@ -1,10 +1,11 @@
-# Project - UI
-Developing intuitive and user-friendly UIs.   
-Each UI project can be viewed by going into each branch.
-
-## List
-- ui-1: Animated hamburger menu
-- ui-2: Responsive navbar (restrict animation on screen resize)
-- ui-3: Responsive navbar (click ouside to close dropdown menu)
-- ui-4: Responsive navbar with submenu
-- ui-5: Responsive navbar with a search bar
+# UI-6 Fixed responsible navbar, changes its size on scroll
+## Features
+- [x]  responsible navbar
+- [x]  search bar with hover animation
+- [x]  logo
+- [x]  menu button, close button
+- [x]  dropdown menu on click
+- [x]  slide out submenu on hover
+- [x]  navbar shadow
+- [x]  fixed header (without overlapping any contents below)
+- [x]  navbar height changes on scroll down
