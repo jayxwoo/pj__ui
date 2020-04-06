@@ -1,0 +1,20 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1rem;
+}
+.master-container {
+    max-width: 1440px;
+}
+figure {
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
