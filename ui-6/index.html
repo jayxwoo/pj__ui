@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="JM Woo">
+    <meta name="description" content="short description about this webpage">
+    <meta name="keywords" content="keywords, separated, with, comma">
+
+    <!-- FONT LINK -->
+    <!-- <link rel="stylesheet" href="fonts/fonts.css" media="none" onload="if(media!='all')media='all'"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS LINK -->
+    <script src="js/script.js" defer></script>
+
+    <!-- TITLE -->
+    <title>ui-6 responsive navbar with animation on scroll</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- search bar -->
+            <div class="search-bar">
+                <button class="search-btn" form="search-form" aria-haspopup="true" aria-label="search button"><i
+                        class="fas fa-search search-icon"></i></button>
+                <form class="search-form" id="search-form" action="#">
+                    <input class="search-input" type="text" name="searchInput">
+                </form>
+            </div>
+
+            <!-- logo -->
+            <a href="index.html" class="logo-link"><img src="img/logo.png" alt="logo" class="logo-img"></a>
+
+            <!-- menu button & nav -->
+            <button class="menu-btn" aria-haspopup="true" aria-label="menu-button" aria-pressed="false"
+                aria-expanded="false"><i class="fas fa-bars menu-icon"></i></button> <!-- fa-times -->
+            <nav class="nav">
+                <ul class="menu-group">
+                    <li class="menu-list"><a href="#" class="menu-link">MENU 1</a></li>
+                    <li class="menu-list"><a href="#" class="menu-link">MENU 2<i
+                                class="fas fa-angle-left arrow-icon-left"></i></a> <!-- fa-angle-right -->
+                        <ul class="submenu-group">
+                            <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU 1</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU 2</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href="#" class="menu-link">MENU 3<i
+                                class="fas fa-angle-left arrow-icon-left"></i></a> <!-- fa-angle-right -->
+                        <ul class="submenu-group">
+                            <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU 1</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU 2</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href="#" class="menu-link">MENU 4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <section class="section1"></section>
+            <section class="section2"></section>
+            <section class="section3"></section>
+            <section class="section4"></section>
+            <section class="section5"></section>
+        </div>
+    </main>
+</body>
+
+</html>
