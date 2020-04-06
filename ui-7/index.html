@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="JM Woo">
+    <meta name="description" content="short description about this webpage">
+    <meta name="keywords" content="keywords, separated, with, comma">
+
+    <!-- FONT LINK -->
+    <!-- <link rel="stylesheet" href="fonts/fonts.css" media="none" onload="if(media!='all')media='all'"> -->
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS LINK -->
+    <script src="js/script.js" defer></script>
+
+    <!-- TITLE -->
+    <title>ui-7 Header with background image and text and fixed navigation at the top</title>
+</head>
+
+<body>
+    <!-- SKIP LINK BUTTON -->
+    <a href="#maincontent" class="skip-link">skip links</a> <!-- connect to the main content -->
+
+    <!-- HEADER -->
+    <section class="header-section">
+        <header class="header">
+            <header class="header-container">
+                <!-- search bar -->
+                <div class="search-bar">
+                    <button class="search-btn" form="search-form" aria-haspopup="true" aria-label="search button"><img
+                            class="search-icon-img" src="asset/search-solid.svg" alt=""></button>
+                    <form class="search-form" id="search-form">
+                        <input type="text" class="search-input" name="searchInput">
+                    </form>
+                </div>
+
+                <!-- logo -->
+                <a href="index.html" class="logo-link"><img class="logo-img" src="asset/LOGO.svg" alt="logo"></a>
+
+                <!-- menu button -->
+                <button class="menu-btn menu-btn-open menu-btn--active" aria-label="menu button" aria-haspopup="true"
+                    aria-pressed="false" aria-expanded="false"><img class="menu-icon menu-icon-open"
+                        src="asset/bars-solid.svg" alt="menu icon"></button>
+                <button class="menu-btn menu-btn-close" aria-label="menu button" aria-haspopup="true"
+                    aria-pressed="false" aria-expanded="false"><img class="menu-icon menu-icon-close"
+                        src="asset/times-solid.svg" alt="menu icon"></button>
+
+                <!-- nav menu -->
+                <nav class="nav">
+                    <ul class="menu-group">
+                        <li class="menu-list"><a class="menu-link" href="#">HOME</a></li>
+                        <li class="menu-list"><a class="menu-link" href="#"><span class="menu-link-sub">MENU1<img
+                                        class="arrow-icon-img" src="asset/angle-left-solid.svg"
+                                        alt="arrow icon"></span></a>
+                            <ul class="submenu-group">
+                                <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU1</a></li>
+                                <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU2</a></li>
+                                <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU3</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-list"><a class="menu-link" href="#">MENU2</a></li>
+                        <li class="menu-list"><a class="menu-link" href="#"><span class="menu-link-sub">MENU3<img
+                                        class="arrow-icon-img" src="asset/angle-left-solid.svg"
+                                        alt="arrow icon"></span></a>
+                            <ul class="submenu-group">
+                                <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU1</a></li>
+                                <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU2</a></li>
+                                <li class="submenu-list"><a href="#" class="submenu-link">SUBMENU3</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-list"><a class="menu-link" href="#">MENU4</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </header>
+        <div class="header-title-container">
+            <h1 class="header-title">TITLE GOES HERE</h1>
+        </div>
+    </section>
+
+    <section class="section1" id="maincontent"></section>
+    <section class="section2"></section>
+    <section class="section2"></section>
+
+</body>
+
+</html>
