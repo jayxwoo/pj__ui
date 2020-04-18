@@ -10,3 +10,4 @@ Each UI project can be viewed by going into each branch.
 - ui-5: Responsive navbar with a search bar
 - ui-6: Fixed responsible navbar, changes its size on scroll
 - ui-7: Header with background image and text and fixed navigation at the top
+- ui-8: Header with a fixed background with a sticky navigation
