@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="JM Woo">
+    <meta name="description" content="short description about this webpage">
+    <meta name="keywords" content="keywords, separated, with, comma">
+
+    <!-- FONT LINK -->
+    <!-- <link rel="stylesheet" href="fonts/fonts.css" media="none" onload="if(media!='all')media='all'"> -->
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS LINK -->
+    <script src="js/script.js" defer></script>
+
+    <!-- TITLE -->
+    <title>ui-9</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.png" alt="logo"></a>
+            <button class="menu-btn" aria-pressed="false" aria-expanded="false" aria-haspopup="true"><i class="menu-icon fas fa-bars"></i></button>
+            <nav>
+                <ul class="menu-group">
+                    <li class="menu-list"><a class="menu-link" href="#">menu1</a></li>
+                    <li class="menu-list"><a class="menu-link" href="#">menu2<i
+                                class="submenu-icon fas fa-arrow-alt-circle-left"></i></a>
+                        <ul class="submenu-group">
+                            <li class="submenu-list"><a href="#" class="submenu-link">submenu1</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">submenu2</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">submenu3</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a class="menu-link" href="#">menu3</a></li>
+                    <li class="menu-list"><a class="menu-link" href="#">menu4<i
+                                class="submenu-icon fas fa-arrow-alt-circle-left"></i></a>
+                        <ul class="submenu-group">
+                            <li class="submenu-list"><a href="#" class="submenu-link">submenu1</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">submenu2</a></li>
+                            <li class="submenu-list"><a href="#" class="submenu-link">submenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="video-bg-container">
+        <video autoplay muted loop class="video-bg">
+            <source src="video/small.mp4" type="video/mp4">
+            <source src="video/small.ogv" type="video/ogv">
+            <source src="video/small.webm" type="video/webm">
+        </video>
+        <p class="video-title">THIS IS THE TITLE</p>
+    </div>
+    <div class="section"></div>
+</body>
+
+</html>
