@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="JM Woo">
+    <meta name="description" content="short description about this webpage">
+    <meta name="keywords" content="keywords, separated, with, comma">
+
+    <!-- FONT LINK -->
+    <!-- <link rel="stylesheet" href="fonts/fonts.css" media="none" onload="if(media!='all')media='all'"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS LINK -->
+    <script src="js/script.js" defer></script>
+
+    <!-- TITLE -->
+    <title>10. Lightbox gallery (responsive)</title>
+</head>
+
+<body>
+    <section class="gallery-container">
+        <div class="gallery">
+            <h1 class="a11y-hidden">Random image gallery</h1>
+            <figure class="gallery-item" aria-haspopup="true">
+                <img class="gallery-item-img" src="https://picsum.photos/700/400?random=1" alt="a random image">
+                <figcaption class="gallery-item-caption">
+                    <p>Random image - 01</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item" aria-haspopup="true">
+                <img class="gallery-item-img" src="https://picsum.photos/700/400?random=2" alt="a random image">
+                <figcaption class="gallery-item-caption">
+                    <p>Random image - 02</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item" aria-haspopup="true">
+                <img class="gallery-item-img" src="https://picsum.photos/700/400?random=3" alt="a random image">
+                <figcaption class="gallery-item-caption">
+                    <p>Random image - 03</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item" aria-haspopup="true">
+                <img class="gallery-item-img" src="https://picsum.photos/700/400?random=4" alt="a random image">
+                <figcaption class="gallery-item-caption">
+                    <p>Random image - 04</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item" aria-haspopup="true">
+                <img class="gallery-item-img" src="https://picsum.photos/700/400?random=5" alt="a random image">
+                <figcaption class="gallery-item-caption">
+                    <p>Random image - 05</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item" aria-haspopup="true">
+                <img class="gallery-item-img" src="https://picsum.photos/700/400?random=6" alt="a random image">
+                <figcaption class="gallery-item-caption">
+                    <p>Random image - 06</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <div class="lightbox-container">
+        <figure class="lightbox">
+            <div class="lightbox-wrapper">
+                <button class="lightbox-close-btn"><i class="lightbox-close-icon fas fa-times"></i></button>
+                <img class="lightbox-img" src="https://picsum.photos/700/400?random=1" alt="a random image">
+                <figcaption class="lightbox-caption">
+                    <p>A random image - 01</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </div>
+        </figure>
+        <figure class="lightbox">
+            <div class="lightbox-wrapper">
+                <button class="lightbox-close-btn"><i class="lightbox-close-icon fas fa-times"></i></button>
+                <img class="lightbox-img" src="https://picsum.photos/700/400?random=2" alt="a random image">
+                <figcaption class="lightbox-caption">
+                    <p>A random image - 02</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </div>
+        </figure>
+        <figure class="lightbox">
+            <div class="lightbox-wrapper">
+                <button class="lightbox-close-btn"><i class="lightbox-close-icon fas fa-times"></i></button>
+                <img class="lightbox-img" src="https://picsum.photos/700/400?random=3" alt="a random image">
+                <figcaption class="lightbox-caption">
+                    <p>A random image - 03</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </div>
+        </figure>
+        <figure class="lightbox">
+            <div class="lightbox-wrapper">
+                <button class="lightbox-close-btn"><i class="lightbox-close-icon fas fa-times"></i></button>
+                <img class="lightbox-img" src="https://picsum.photos/700/400?random=4" alt="a random image">
+                <figcaption class="lightbox-caption">
+                    <p>A random image - 04</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </div>
+        </figure>
+        <figure class="lightbox">
+            <div class="lightbox-wrapper">
+                <button class="lightbox-close-btn"><i class="lightbox-close-icon fas fa-times"></i></button>
+                <img class="lightbox-img" src="https://picsum.photos/700/400?random=5" alt="a random image">
+                <figcaption class="lightbox-caption">
+                    <p>A random image - 05</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </div>
+        </figure>
+        <figure class="lightbox">
+            <div class="lightbox-wrapper">
+                <button class="lightbox-close-btn"><i class="lightbox-close-icon fas fa-times"></i></button>
+                <img class="lightbox-img" src="https://picsum.photos/700/400?random=6" alt="a random image">
+                <figcaption class="lightbox-caption">
+                    <p>A random image - 06</p>
+                    <a href="#">click to view</a>
+                </figcaption>
+            </div>
+        </figure>
+    </div>
+</body>
+
+</html>
