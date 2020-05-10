@@ -1,0 +1,32 @@
+/* ====================
+[GLOBAL]
+======================= */
+@import url('default/default.css');
+
+
+/* ====================
+[MODULE]
+======================= */
+
+
+/* ====================
+[LAYOUT]
+======================= */
+/* body */
+body { font-family: Helvetica; }
+
+/* ========== faq ========== */
+/* faq - container & title */
+.faq-container { width: 100vw; padding: 3em; }
+.faq { max-width: 800px; margin: 0 auto; border: 1px solid lightgrey; border-radius: 30px; }
+.faq-title { font-size: 2em; text-align: center; margin: 0.8em 0; }
+
+/* faq - item */
+.faq-item { margin: 0.5em 1.5em; border-bottom: 1px solid lightgrey; }
+.faq-item:last-of-type { border-bottom: none; }
+.faq-number { font-weight: bold; font-size: 1.1em; }
+.faq-btn { border: none; background: none; outline: none; }
+.faq-icon { font-size: 1.4em; cursor: pointer; transition: 0.3s ease-in-out; }
+.faq-q { padding: 0.5em 0; }
+.faq-a-wrapper { overflow: hidden; max-height: 0; transition: 0.3s ease-in; background: lightgoldenrodyellow; }
+.faq-a { padding: 0.5em; }
