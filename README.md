@@ -14,3 +14,4 @@ Each UI project can be viewed by going into each branch.
 - ui-9: Header with video background and text with fixed navigation at the top
 - ui-10: Lightbox gallery (responsive)
 - ui-11: Accordion
+- ui-12: Carousel (responsive)
