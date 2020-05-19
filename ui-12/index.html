@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BASIC META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CUSTOM META TAGS -->
+    <meta name="author" content="JM Woo">
+    <meta name="description" content="short description about this webpage">
+    <meta name="keywords" content="keywords, separated, with, comma">
+
+    <!-- FONT LINK -->
+    <!-- <link rel="stylesheet" href="fonts/fonts.css" media="none" onload="if(media!='all')media='all'"> -->
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- JS LINK -->
+    <script src="js/script.js" defer></script>
+
+    <!-- TITLE -->
+    <title></title>
+</head>
+
+<body>
+    <div class="carousel">
+        <ul class="carousel-track">
+            <li class="carousel-slide carousel-slide--active">
+                <img class="carousel-img" src="img/carousel/1.jpg" alt="">
+            </li>
+            <li class="carousel-slide">
+                <img class="carousel-img" src="img/carousel/2.jpg" alt="">
+            </li>
+            <li class="carousel-slide">
+                <img class="carousel-img" src="img/carousel/3.jpg" alt="">
+            </li>
+            <li class="carousel-slide">
+                <img class="carousel-img" src="img/carousel/4.jpg" alt="">
+            </li>
+        </ul>
+        
+        <button class="carousel-btn carousel-btn--left" aria-label="next image button"><i class="carousel-icon carousel-icon--left fas fa-arrow-left"></i></button>
+        <button class="carousel-btn carousel-btn--right" aria-label="previous image button"><i class="carousel-icon carousel-icon--right fas fa-arrow-right"></i></button>
+
+        <div class="indicator-container">
+            <button class="indicator indicator--active"></button>
+            <button class="indicator"></button>
+            <button class="indicator"></button>
+            <button class="indicator"></button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+/* ====================
+[GLOBAL & DEFAULT]
+======================= */
+@import url('default/default.css');
+
+
+/* ====================
+[MODULE]
+======================= */
+
+
+/* ====================
+[LAYOUT]
+======================= */
+/* body */
+body { font-family: Helvetica; }
+
+/* carousel */
+.carousel {width: 100vw; max-width: 1440px; height: 600px; margin: 0 auto; position: relative; }
+.carousel-track { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; position: relative; background: transparent; }
+.carousel-slide { position: absolute; width: 80%; max-width: calc(1440px*0.8); visibility: hidden; }
+.carousel-img { border-radius: 20px; }
+.carousel-slide--active { visibility: visible; }
+
+/* carousel button */
+.carousel-btn { position: absolute; top: 50%; cursor: pointer; background: none; border: none; }
+.carousel-btn--left { transform: translate(-50%, -50%); }
+.carousel-btn--right { transform: translate(50%, -50%); }
+.carousel-icon { font-size: 2em; }
+
+@media (max-width: 500px) {
+    .carousel-icon { font-size: 1.5em; }
+}
+@media (min-width: 800px) {
+    .carousel-icon { font-size: 2.5em; }
+}
+
+/* carousel indicator */
+.indicator-container { position: absolute; bottom: 0; left: 50%; transform: translate(-50%); display: flex; }
+.indicator { cursor: pointer; width: 15px; height: 15px; border-radius: 50%; background: rgba(0, 0, 0, 0.4); border: none; margin: 0 10px; }
+.indicator--active { background: rgba(0, 0, 0, 0.8); }
+
+@media (max-width: 700px) {
+    .indicator { width: 12px; height: 12px; }
+}
+@media (max-width: 500px) {
+    .indicator { width: 10px; height: 10px; }
+}
