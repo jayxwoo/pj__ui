@@ -1,4 +1,4 @@
-# Project UI:  Carousel (responsive)
+# Project UI-12:  Carousel (responsive)
 ## Features
 - responsive carousel
     - responsive images
