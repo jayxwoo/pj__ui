@@ -1,0 +1,33 @@
+/* ====================
+[GLOBAL & DEFAULT]
+======================= */
+@import url('default/default.css');
+
+
+/* ====================
+[MODULE]
+======================= */
+
+
+/* ====================
+[LAYOUT]
+======================= */
+/* body */
+body { font-family: Helvetica; }
+
+/* header */
+header { background: url(../img/bg1.jpg) center/cover no-repeat; width: 100%; padding-top: 68.85%; position: relative; }
+.header__text-box { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.header__text { text-transform: uppercase; font-size: 1.5em; font-weight: lighter; margin-bottom: 30px; transition: 1s ease-in; }
+.header__logo-img { max-width: 90%; margin: 0 auto; transition: 1s ease-in; }
+@media (max-width: 600px) {
+    .header__logo-img { max-width: 70%; }
+    .header__text { margin-bottom: 20px; }
+    .header__subtext { margin-top: 20px; }
+}
+.header__subtext { font-size: 1.2em; margin-top: 30px; font-weight: lighter; transition: 1s ease-in; }
+
+/* pre */
+.header__text--pre { transform: translateY(50%); opacity: 0; }
+.header__logo-img--pre { transform: translateY(50%); opacity: 0; }
+.header__subtext--pre { transform: translateY(50%); opacity: 0; }
