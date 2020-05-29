@@ -16,3 +16,4 @@ Each UI project can be viewed by going into each branch.
 - ui-11: Accordion
 - ui-12: Carousel (responsive)
 - ui-13: Pre-loader
+- ui-14: Elements slide in(animate) when page is loaded
