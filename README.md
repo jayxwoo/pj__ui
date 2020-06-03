@@ -18,3 +18,4 @@ Each UI project can be viewed by going into each branch.
 - ui-13: Pre-loader
 - ui-14: Elements slide in(animate) when page is loaded
 - ui-15: Elements slide in(animate) when  scrolled down to its position on the page
+- ui-16: Elements slide in(animate) when  scrolled down to its position, and return to its original state when scrolled up out of its position
