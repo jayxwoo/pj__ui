@@ -1,0 +1,49 @@
+/* ====================
+[GLOBAL & DEFAULT]
+======================= */
+@import url('default/default.css');
+
+
+/* ====================
+[MODULE]
+======================= */
+
+
+/* ====================
+[LAYOUT]
+======================= */
+/* body */
+body { font-family: Helvetica; }
+
+/* header */
+header { width: 100%; height: 60px; background: lightslategrey; display: flex; align-items: center; justify-content: center; position: relative; z-index: 30; }
+.header__text { color: white; font-weight: bold; }
+
+/* section 1 */
+.section1 { width: 100%; padding-top: 71.77%; background: url(../img/section1-bg.jpg) center/cover no-repeat; position: relative; z-index: 20; }
+.section1 h2 { color: white; text-transform: uppercase; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+/* section 2 */
+.section2 { width: 100%; max-width: 1440px; padding: 8em 0; margin: 0 auto; position: relative; }
+.section2__img { width: 60%; margin: 0 auto; position: relative; z-index: 10; border-radius: 20px; transition: transform 0.5s cubic-bezier(0,1.1,1,1.24); }
+.section2__img--pre { transform: translateY(-250%); }
+.section2__text { color: lightslategray; font-weight: bold; font-size: 2em; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+@media only screen and (max-width: 600px) {
+    .section2__text { font-size: 1em; }
+}
+
+/* section 3 */
+.section3 { width: 100%; max-width: 1440px; padding: 8em 0; margin: 0 auto; overflow: hidden; }
+.section3__text-box { width: 50%; max-width: 600px; margin: 0 auto; position: relative; }
+.section3__img { width: 100%; border-radius: 20px; }
+.section3__text-top { font-weight: bold; font-size: 3em; color: lightsalmon; position: absolute; top: 25%; left: 0; transform: translateX(-40%); transition: left 0.5s ease-in-out; }
+.section3__text-top--pre { left: -100%; }
+.section3__text-bottom { font-weight: bold; font-size: 3em; color: lightsalmon; position: absolute; bottom: 25%; right: 0; transform: translateX(40%); transition: right 0.5s ease-in-out 0.5s; }
+.section3__text-bottom--pre { right: -100%; }
+@media only screen and (max-width: 600px) {
+    .section3__text-top, .section3__text-bottom { font-size: 2em; }
+}
+
+/* section 4 */
+.section4 { width: 100%; height: 700px; background: lightsalmon; display: flex; align-items: center; justify-content: center; }
+.section4 h2 { color: white; text-transform: uppercase; }
