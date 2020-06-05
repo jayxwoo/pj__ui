@@ -1,0 +1,34 @@
+/* ====================
+[GLOBAL & DEFAULT]
+======================= */
+@import url('default/default.css');
+
+
+/* ====================
+[MODULE]
+======================= */
+
+
+/* ====================
+[LAYOUT]
+======================= */
+/* html (root) */
+
+/* body */
+body { font-family: Helvetica; }
+
+/* header */
+/* header { width: 100%; height: 60px; background: lightslategrey; display: flex; align-items: center; justify-content: center; }
+.header__text { color: white; font-weight: bold; font-size: 1.5em; } */
+
+/* section 1 - parallax scroll */
+.section1-parallax { width: 100%; height: 100vh; perspective: 1px; overflow-x: hidden; overflow-y: auto; }
+.section1-parallax__layer { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.section1-parallax__layer--back { transform: translateZ(-1px) scale(2); }
+.section1-parallax__layer--base { transform: translateZ(0); }
+.section1__bg { background: url(../img/bg1.jpg) center/cover no-repeat; width: 100%; height: 100%;; }
+.section1__text { color: white; font-weight: bold; font-size: 3em; background: darkslategrey; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); line-height: 1; padding: 20px; text-align: center; }
+
+/* section 2 - normal scroll */
+.section2 { width: 100%; height: 100vh; background: url(../img/bg2.jpg) center/cover no-repeat; position: relative; }
+.section2__text { color: white; font-weight: bold; font-size: 3em; background: darkslategrey; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); line-height: 1; padding: 20px; text-align: center; }
