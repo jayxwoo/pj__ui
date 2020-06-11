@@ -20,3 +20,4 @@ Each UI project can be viewed by going into each branch.
 - ui-15: Elements slide in(animate) when  scrolled down to its position on the page
 - ui-16: Elements slide in(animate) when  scrolled down to its position, and return to its original state when scrolled up out of its position
 - ui-17: Parallax scrolling - background (no JS)
+- ui-18: Parallax scrolling (JS)
