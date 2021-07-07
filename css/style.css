@@ -1,0 +1,40 @@
+/* ====================
+[GLOBAL & DEFAULT]
+======================= */
+@import url('default/default.css');
+
+
+/* ====================
+[MODULE]
+======================= */
+
+
+/* ====================
+[LAYOUT]
+======================= */
+/* body */
+body { font-family: Helvetica; }
+
+/* section 1 */
+.section1 { width: 100vw; height: 100vh; background: grey; display: flex; justify-content: center; align-items: center; }
+.section1__text { color: white; font-size: 2em; }
+
+/* section 2 */
+.section2 { width: 100vw; height: 100vh; background: darkcyan; position: relative; }
+.element { background: white; position: absolute; padding: 1em; border-radius: 10px; }
+.element1 { bottom: 10%; left: 10%; transform: translateX(-50%); }
+.element2 { bottom: 50%; left: 30%; transform: translateX(-50%); }
+.element3 { bottom: 20%; left: 50%; transform: translateX(-50%); }
+.element4 { bottom: 60%; left: 70%; transform: translateX(-50%); }
+.element5 { bottom: 40%; left: 90%; transform: translateX(-50%); }
+
+/* section 3 */
+.section3 { width: 100vw; height: 100vh; background: darkgoldenrod; position: relative; }
+.element6 { top: 10%; left: 5%; transform: translateY(-50%); }
+.element7 { top: 30%; left: 20%; transform: translateY(-50%); }
+.element8 { top: 50%; left: 10%; transform: translateY(-50%); }
+.element9 { top: 70%; left: 15%; transform: translateY(-50%); }
+.element10 { top: 90%; left: 1%; transform: translateY(-50%); }
+
+/* section 4 */
+.section4 { width: 100vw; height: 100vh; }

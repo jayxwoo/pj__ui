@@ -1,0 +1,18 @@
+/* ====================
+[CSS DEFAULT]
+======================= */
+html { box-sizing: border-box; font-size: 16px; }
+body { min-height: 100vh; scroll-behavior: smooth; text-rendering: optimizeSpeed; line-height: 1; }
+*, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+ul, ol { list-style: none; }
+
+/* animation stopper during resize */
+.resize-animation-stopper * { animation: none !important; transition: none !important; }
+
+/* a11y hidden; for hidden labels */
+.a11y-hidden { overflow: hidden; position: absolute; clip: rect(0,0,0,0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; }
+
+/* skip menu */
+.skip-menu { position: absolute; top: -50px; left: 0; z-index: 1000; padding: 5px; line-height: 1; text-decoration: none; color: white; background: red; }
+.skip-menu:focus { top: 0; }
